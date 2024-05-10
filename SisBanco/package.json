@@ -1,0 +1,8 @@
+{
+    "name": "SisBanco",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "daniel_silva37",
+    "contributors": [],
+    "dependencies": {}
+}

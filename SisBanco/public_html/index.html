@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Bancário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema Bancário</h1>
+        <button  id="btnCadastroBanco">Cadastrar Banco</button>
+        <button id="btnCadastroAgencia">Cadastrar Agência</button>
+        <button id="btnCadastroCliente">Cadastrar Cliente</button>
+        <button id="btnAberturaConta">Abrir Conta</button>
+        <button id="btnRealizarTransacao">Realizar Transação</button>
+        <button id="btnRelatorioTransacoes">Relatório de Transações</button>
+    </div>
+
+    <script>
+        // Adicionar event listeners aos botões
+        document.getElementById("btnCadastroBanco").addEventListener("click", cadastrarBanco);
+        document.getElementById("btnCadastroAgencia").addEventListener("click", cadastrarAgencia);
+        document.getElementById("btnCadastroCliente").addEventListener("click", cadastrarCliente);
+        document.getElementById("btnAberturaConta").addEventListener("click", abrirConta);
+        document.getElementById("btnRealizarTransacao").addEventListener("click", realizarTransacao);
+        document.getElementById("btnRelatorioTransacoes").addEventListener("click", relatorioTransacoes);
+
+        // Funções dos botões
+        function cadastrarBanco() {
+            window.location.href = "cadastro_banco.php";
+            console.log("Cadastrar Banco");
+        }
+
+        function cadastrarAgencia() {
+            window.location.href = "cadastro_agencia.php";
+            console.log("Cadastrar Agência");
+        }
+
+        function cadastrarCliente() {
+            // Implementar a lógica para cadastrar um cliente
+            console.log("Cadastrar Cliente");
+        }
+
+        function abrirConta() {
+            // Implementar a lógica para abrir uma conta
+            console.log("Abrir Conta");
+        }
+
+        function realizarTransacao() {
+            // Implementar a lógica para realizar uma transação
+            console.log("Realizar Transação");
+        }
+
+        function relatorioTransacoes() {
+            // Implementar a lógica para exibir o relatório de transações
+            console.log("Relatório de Transações");
+        }
+    </script>
+</body>
+</html>
